@@ -4,7 +4,7 @@
     <div class="title-wrap text-center">
       <div class="title">Best Sellers</div>
       <div class="sm-title">All Natural and Organic Products</div>
-      <%= link_to "See All Best Sellers", best_seller_path, class: "btn btn-primary" %>
+      <%= link_to "See All Best Sellers", best_sellers_path, class: "btn btn-primary" %>
       </div>
       <div class="row narrow-row">
         <%= render partial: 'spree/shared/home_product', locals: { products: @best_sellers,taxon: @taxon } %>
