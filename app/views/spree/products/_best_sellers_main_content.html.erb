@@ -7,7 +7,7 @@
       <%= link_to "See All Best Sellers", best_seller_path, class: "btn btn-primary" %>
       </div>
       <div class="row narrow-row">
-        <%= render partial: 'spree/products/product', collection: @best_sellers, locals: { taxon: @taxon } %>
+        <%= render partial: 'spree/shared/home_product', locals: { products: @best_sellers,taxon: @taxon } %>
       </div>  
     <% reset_cycle("classes") %>
   </div>
